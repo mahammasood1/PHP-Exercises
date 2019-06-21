@@ -12,6 +12,15 @@
 
     <ul>
            <?= $task['completed'] ? 'Done':'Not done' ?>
+            <br>
+            
+           <?php 
+           if ($task['checked'])
+                echo 'Completed';
+
+            else
+                echo 'Not completed';
+            ?>
 
     </ul>
 
