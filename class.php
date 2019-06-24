@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-
-<html>
-<body>
-
 <?php
 
-class Employee {
+class Task{
 
-    function assignSal(){
-        $this->salary = 30000;
+    public $description, $completed;
 
-        echo "Salary: ", $this->salary, "<br>";
+
+    public function foobar()
+    {
+        return 'foobar';
     }
 }
-
-
-$E1 = new Employee();
-
-$E1->assignSal();
-//echo $E1->salary
-
-//using null
-
-$E1->salary = null;
-echo "Salary: ", $E1->salary, "<br>";
-
-?>
-
-
-
-
-
-</html>
-</body>

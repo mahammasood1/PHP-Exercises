@@ -1,14 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
+require 'functions.php';
+require 'class.php';
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
-?>
+$pdo = connectToDb();
+
+$tasks = fetchAllTasks($pdo);
+
+require 'db.view.php';
+
