@@ -13,9 +13,16 @@
 
 <body>
 
+    <nav>
+        <ul>
+            <li><a href="/about.php">About Page</li>
+            <li><a href="/contact.php">Contact Page</li>
+        </ul>
+    </nav>
+
     <h1>My Tasks</h1>
 
-    <? php foreach ($tasks as $task) :?>
+    <?php foreach ($tasks as $task) :?>
 
         <li>
             <?php if($task->completed) :?>
